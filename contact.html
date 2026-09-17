@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Assignment #1: HTML & CSS Basics | Team: Marginalia | Group 2503
+       Page created by: Gabidin Kaldybek -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Marginalia</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" id="site-title">Marginalia</a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="excerpts.html">Excerpts</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <img src="images/envelope.svg" alt="Illustration of a sealed envelope with a wax stamp" width="110" height="110" style="margin:0 auto 1rem;">
+    <h1>Send Us a Line</h1>
+    <p>Found a sentence you can't stop thinking about? Send it our way and, if it
+      fits the collection, it might show up on the <a href="excerpts.html">Excerpts page</a>
+      with a proper credit.</p>
+
+    <div class="card">
+      <h3>About the Curator</h3>
+      <p><span class="highlight">Gabidin Kaldybek</span>, Group 2503, keeps this
+        inbox and the reading log in the previous page up to date. Submissions are
+        read in the order they arrive, usually in the evening with the desk lamp on
+        and everything else turned off.</p>
+    </div>
+
+    <hr class="section-divider">
+
+    <form id="contact-form" action="#" method="post">
+      <h2>Submission Form</h2>
+
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="e.g. Aigerim Bekova" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="category">Submission Type</label>
+        <select id="category" name="category">
+          <option value="fiction">Fiction</option>
+          <option value="poetry">Poetry</option>
+          <option value="philosophy">Philosophy / Non-fiction</option>
+          <option value="other">Something Else</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>How did you find this site?</label>
+        <div class="radio-group">
+          <label><input type="radio" name="source" value="friend" checked> A friend told me</label>
+          <label><input type="radio" name="source" value="class"> Classmate / classroom</label>
+          <label><input type="radio" name="source" value="search"> Searching online</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="excerpt">The Excerpt (and where it's from)</label>
+        <textarea id="excerpt" name="excerpt" placeholder="Paste the line here, along with the book and author..."></textarea>
+      </div>
+
+      <button type="submit">Submit Excerpt</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>Marginalia — Assignment #1 Project | Group 2503</p>
+    <p>Team Members: Akerke Ramazan &amp; Gabidin Kaldybek</p>
+  </footer>
+
+</body>
+</html>
