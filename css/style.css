@@ -552,11 +552,6 @@ footer p { margin: 0.2rem 0; color: var(--text-muted); }
   grid-area: header;
 }
 
-.sidebar {
-  grid-area: sidebar;
-  padding: 30px 20px;
-  border-right: 1px solid #ddd;
-}
 
 .main-content {
   grid-area: main;
